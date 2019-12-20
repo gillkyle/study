@@ -1,17 +1,10 @@
-- name: Dennis Brotzky
+- name: Kyle Gill
   bio: |
-    Written by You. This is where your author bio lives. Share your work, your
-    joys and of course, your Twitter handle.
-  avatar: ./avatars/dennis-brotzky.jpg
+    I'm a software engineer and a fan of learning cool things, building cool things, and listening to cool music. 
+  avatar: ./avatars/portrait-square-small.jpg
   featured: true
   social:
     - name: github
-      url: https://github.com
+      url: https://github.com/gillkyle
     - name: twitter
-      url: https://github.com
-    - name: instagram
-      url: https://github.com
-    - name: dribbble
-      url: https://github.com
-    - name: linkedin
-      url: https://github.com
+      url: https://twitter.com/gill_kyle

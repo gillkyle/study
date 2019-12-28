@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 
-const Scripture = ({ children }) => {
+const Scripture = ({ title, link, children }) => {
   return (
     <div
       sx={{
@@ -19,6 +19,23 @@ const Scripture = ({ children }) => {
         },
       }}
     >
+      <div
+        sx={{
+          fontSize: `2`,
+          fontWeight: `700`,
+          mb: `1`,
+          fontStyle: `italic`,
+          color: `grey`,
+        }}
+      >
+        <a
+          sx={{ textDecoration: `none`, cursor: link ? `pointer` : `default` }}
+          href={link && link}
+          target="_blank"
+        >
+          {title}
+        </a>
+      </div>
       {children}
     </div>
   )

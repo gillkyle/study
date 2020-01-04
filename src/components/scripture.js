@@ -10,7 +10,8 @@ const Scripture = ({ title, link, children }) => {
         width: `100%`,
         maxWidth: 744,
         p: `4`,
-        backgroundColor: `#f0f4f7`,
+        color: `articleText`,
+        backgroundColor: `scriptureBg`,
         fontSize: 18,
         fontFamily: `Palatino`,
         lineHeight: 1.5,
@@ -29,7 +30,11 @@ const Scripture = ({ title, link, children }) => {
         }}
       >
         <a
-          sx={{ textDecoration: `none`, cursor: link ? `pointer` : `default` }}
+          sx={{
+            color: `accent`,
+            textDecoration: `none`,
+            cursor: link ? `pointer` : `default`,
+          }}
           href={link && link}
           target="_blank"
         >

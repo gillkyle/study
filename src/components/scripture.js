@@ -37,6 +37,7 @@ const Scripture = ({ title, link, children }) => {
           }}
           href={link && link}
           target="_blank"
+          rel="noopener noreferrer"
         >
           {title}
         </a>

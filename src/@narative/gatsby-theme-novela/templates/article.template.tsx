@@ -28,8 +28,12 @@ export const pageQuery = graphql`
   query ArticleQuery($id: String!) {
     article(id: { eq: $id }) {
       id
-      fields {
-        tags
+      parent {
+        ... on Mdx {
+          frontmatter {
+            tags
+          }
+        }
       }
     }
     allSite {
@@ -103,7 +107,7 @@ const Article: Template = ({ data, pageContext, location }) => {
         <MDXRenderer content={article.body}>
           <ArticleShare />
         </MDXRenderer>
-        <Tags tags={data.article.fields.tags} />
+        <Tags tags={data.article.parent.frontmatter.tags} />
       </ArticleBody>
       {mailchimp && article.subscription && <Subscription />}
       {next.length > 0 && (

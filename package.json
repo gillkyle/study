@@ -6,13 +6,17 @@
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby develop",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "newPost": "node ./newPost.js"
   },
   "dependencies": {
     "@narative/gatsby-theme-novela": "^0.*",
+    "date-fns": "^2.9.0",
+    "fs": "^0.0.1-security",
     "gatsby": "^2.13.41",
     "gatsby-plugin-manifest": "^2.2.4",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "slug": "^2.1.0"
   }
 }

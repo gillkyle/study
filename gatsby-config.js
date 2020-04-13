@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Drops of Sol`,
-    name: `Drops of Sol`,
+    title: `Study | Kyle Gill`,
+    name: `Study | Kyle Gill`,
     siteUrl: `https://novela.narative.co`,
     description: `Weekly learnings, thoughts, and synthesis from the Scriptures.`,
     hero: {
@@ -35,8 +35,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Drops of Sol`,
-        short_name: `Drops of Sol`,
+        name: `Study | Kyle Gill`,
+        short_name: `Study | Kyle Gill`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#fff`,

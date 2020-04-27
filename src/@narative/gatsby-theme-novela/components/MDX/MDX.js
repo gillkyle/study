@@ -24,6 +24,7 @@ import { toKebabCase } from "@utils"
 // add custom scripture block component
 import Scripture from "../../../../components/scripture"
 import ScriptureBreak from "../../../../components/scripture-break"
+import ClientOnly from "../../../../components/client-only"
 
 const components = {
   img: ImageZoom,
@@ -47,7 +48,7 @@ const components = {
   td: Tables.Cell,
   figcaption: Figcaption,
   Scripture: Scripture,
-
+  ClientOnly: ClientOnly,
   br: ScriptureBreak,
 }
 

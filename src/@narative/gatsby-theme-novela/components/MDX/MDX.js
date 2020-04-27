@@ -47,6 +47,7 @@ const components = {
   td: Tables.Cell,
   figcaption: Figcaption,
   Scripture: Scripture,
+
   br: ScriptureBreak,
 }
 

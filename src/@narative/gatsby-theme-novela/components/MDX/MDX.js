@@ -24,6 +24,7 @@ import { toKebabCase } from "@utils"
 // add custom scripture block component
 import Scripture from "../../../../components/scripture"
 import ScriptureBreak from "../../../../components/scripture-break"
+import Highlight from "../../../../components/highlight"
 import ClientOnly from "../../../../components/client-only"
 
 const components = {
@@ -48,6 +49,7 @@ const components = {
   td: Tables.Cell,
   figcaption: Figcaption,
   Scripture: Scripture,
+  Highlight: Highlight,
   ClientOnly: ClientOnly,
   br: ScriptureBreak,
 }

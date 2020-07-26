@@ -3,7 +3,8 @@ import styled from "@emotion/styled"
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core"
 import throttle from "lodash/throttle"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, Link } from "gatsby"
+import slugify from "slugify"
 
 import Layout from "@narative/gatsby-theme-novela/src/components/Layout"
 import MDXRenderer from "@narative/gatsby-theme-novela/src/components/MDX"
@@ -162,20 +163,27 @@ const Tags = ({ tags }) => {
     >
       Tags:
       {tags.map(tag => (
-        <span
+        <Link
           css={css`
-            margin: 10px;
-            padding-top: 4px;
-            padding-bottom: 4px;
-            padding-left: 8px;
-            padding-right: 8px;
             color: ${novelaTheme.colors.background};
-            background-color: ${novelaTheme.colors.accent};
-            border-radius: 4px;
           `}
+          to={`/tags/${slugify(tag)}`}
         >
-          {tag}
-        </span>
+          <span
+            css={css`
+              margin: 10px;
+              padding-top: 4px;
+              padding-bottom: 4px;
+              padding-left: 8px;
+              padding-right: 8px;
+              color: ${novelaTheme.colors.background};
+              background-color: ${novelaTheme.colors.accent};
+              border-radius: 4px;
+            `}
+          >
+            {tag}
+          </span>
+        </Link>
       ))}
     </div>
   ) : null

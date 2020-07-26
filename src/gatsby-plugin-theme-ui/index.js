@@ -7,6 +7,7 @@ export default {
     border: `#eaebef`,
     scriptureBg: `#f2f5f7`,
     highlightBg: `#f7c82080`,
+    accentLink: `#1d049e`,
     modes: {
       ...novelaTheme.colors.modes,
       dark: {
@@ -14,6 +15,7 @@ export default {
         border: `#424242`,
         scriptureBg: `#262627`,
         highlightBg: `#f7c82080`,
+        accentLink: `#ff9aff`,
       },
     },
   },

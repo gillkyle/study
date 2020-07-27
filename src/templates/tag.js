@@ -5,7 +5,6 @@ import slugify from "slugify"
 import Layout from "@narative/gatsby-theme-novela/src/components/Layout"
 
 const TagsPage = ({ data, pageContext }) => {
-  console.log(data)
   return (
     <Layout>
       <div
@@ -56,7 +55,10 @@ export default TagsPage
 
 export const query = graphql`
   query TagQuery($tag: String!) {
-    tagPosts: allMdx(filter: { frontmatter: { tags: { in: [$tag] } } }) {
+    tagPosts: allMdx(
+      filter: { frontmatter: { tags: { in: [$tag] } } }
+      sort: { fields: frontmatter___date, order: DESC }
+    ) {
       nodes {
         id
         frontmatter {
